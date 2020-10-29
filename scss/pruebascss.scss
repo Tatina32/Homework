@@ -1,0 +1,83 @@
+//variables
+$colortitulo:rgb(41, 189, 66);
+$colorlight: lightness($color: #cad6e9);
+$colorv:  #86497c;
+$colorf: rgb(38, 228, 155);
+
+//SCSS
+body {
+    background: $colorlight;
+    text-align: center;
+    font-size: 15px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    header {
+      
+       background-color: opacity($color: #6b1b5e);
+       font-size: 20px;
+       width: 100%;
+       height: 20%;
+       ul {
+        list-style: none;
+        li {
+          padding: 15px;
+          display: inline-block;
+          a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(28, 22, 63);
+          }
+       
+        }
+       
+       }
+      }
+       footer {
+        height: 20%;
+        
+        .formulario {
+          align-items: center;
+          border-radius: 20px;
+          border: 2px solid #bd5307 ;
+          padding: 10px;
+          margin: 10px;
+          width: 600px;
+          height: 600px;
+          
+            input {
+             
+              width: 250px;
+              height: 30px;
+              transition: all 2s;
+            }
+            input:focus {
+              width: 500px;
+              height: 60px;
+              font-size: 24px;
+            }
+        .redes {
+          position: row;
+          background:$colorf ;
+        }   
+      }
+    }
+  }
+
+    
+div {
+  padding: 15px;
+  background-color: lightsteelblue;
+  h1 {
+      color: $colortitulo;
+      text-align: center;
+  }
+  h2{
+    color: $colortitulo;
+    text-align: center;
+  }
+
+  p{
+    font-size: 18px;
+    color: $colorv;
+    
+  }
+}
